@@ -10,23 +10,23 @@
 <!--suppress ALL -->
 <br />
 <p align="center">
-  <a href="https://github.com/TamrielNetwork/VitalFly">
+  <a href="https://github.com/TamrielNetwork/VitalSeen">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">VitalFly</h3>
+<h3 align="center">VitalSeen</h3>
 
   <p align="center">
-    Fly on Spigot and Paper
+    See when player was last seen on Spigot and Paper
     <br />
-    <a href="https://github.com/TamrielNetwork/VitalFly"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/TamrielNetwork/VitalSeen"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/TamrielNetwork/VitalFly">View Demo</a>
+    <a href="https://github.com/TamrielNetwork/VitalSeen">View Demo</a>
     ·
-    <a href="https://github.com/TamrielNetwork/VitalFly/issues">Report Bug</a>
+    <a href="https://github.com/TamrielNetwork/VitalSeen/issues">Report Bug</a>
     ·
-    <a href="https://github.com/TamrielNetwork/VitalFly/issues">Request Feature</a>
+    <a href="https://github.com/TamrielNetwork/VitalSeen/issues">Request Feature</a>
   </p>
 
 <!-- TABLE OF CONTENTS -->
@@ -62,17 +62,13 @@
 
 ### Description
 
-VitalFly is a Plugin that gives players the ability to fly.
+VitalSeen is a Plugin that gives players the ability to see when other players were last seen.
 
-This plugin is perfect for any server wanting their players to fly in survival.
+This plugin is perfect for any server wanting their players to keep in touch with others.
 
 ### Features
 
-* Toggle fly on and off for command sender and other players
-* Set fly speed for command sender and other players
-* Keep fly on world change
-* Keep fly toggled on rejoin when player is falling
-* Keep fly toggled when player changes back to survival
+* See when player was last seen formatted as date
 
 ### Built With
 
@@ -131,27 +127,14 @@ flyspeed:
 ### Configuration - messages.yml
 
 ```
-no-args: "&7Enter this command: &b/vitalfly fly/flyspeed <player> <flyspeed>"
-player-only: "&cThis command can only be executed by players!"
-invalid-option: "&cInvalid option!"
-invalid-player: "&cInvalid player!"
-not-online: "&cPlayer is not online!"
-beyond-limit: "&cThe number is too high!"
-no-perms: "&7You don't have enough permissions!"
-invalid-amount: "&cInvalid amount!"
-now-flying: "&7Fly toggled &aON"
-now-flying-disabled: "&7Fly toggled &cOFF"
-player-now-flying: "&7Fly toggled &aON &7for &b%player%"
-player-now-flying-disabled: "&7Fly toggled &cOFF &7for &b%player%"
-flyspeed-changed: "&7FlySpeed set to &b%flyspeed%&7"
-player-flyspeed-changed: "&7Flyspeed set to &b%flyspeed% &7for &b%player%&7"
+
 ```
 
 <!-- ROADMAP -->
 
 ## Roadmap
 
-See the [open issues](https://github.com/TamrielNetwork/VitalFly/issues) for a list of proposed features (and known
+See the [open issues](https://github.com/TamrielNetwork/VitalSeen/issues) for a list of proposed features (and known
 issues).
 
 <!-- CONTRIBUTING -->
@@ -181,7 +164,7 @@ Leopold Meinel - [@TamrielN](https://twitter.com/TamrielN) - Twitter
 
 Leopold Meinel - [contact@tamriel.me](mailto:contact@tamriel.me) - eMail
 
-Project Link - [VitalFly](https://github.com/TamrielNetwork/VitalFly) - GitHub
+Project Link - [VitalSeen](https://github.com/TamrielNetwork/VitalSeen) - GitHub
 
 <!-- ACKNOWLEDGEMENTS -->
 
@@ -191,26 +174,26 @@ Project Link - [VitalFly](https://github.com/TamrielNetwork/VitalFly) - GitHub
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
-[contributors-shield]: https://img.shields.io/github/contributors-anon/TamrielNetwork/VitalFly?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors-anon/TamrielNetwork/VitalSeen?style=for-the-badge
 
-[contributors-url]: https://github.com/TamrielNetwork/VitalFly/graphs/contributors
+[contributors-url]: https://github.com/TamrielNetwork/VitalSeen/graphs/contributors
 
-[forks-shield]: https://img.shields.io/github/forks/TamrielNetwork/VitalFly?label=Forks&style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/TamrielNetwork/VitalSeen?label=Forks&style=for-the-badge
 
-[forks-url]: https://github.com/TamrielNetwork/VitalFly/network/members
+[forks-url]: https://github.com/TamrielNetwork/VitalSeen/network/members
 
-[stars-shield]: https://img.shields.io/github/stars/TamrielNetwork/VitalFly?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/TamrielNetwork/VitalSeen?style=for-the-badge
 
-[stars-url]: https://github.com/TamrielNetwork/VitalFly/stargazers
+[stars-url]: https://github.com/TamrielNetwork/VitalSeen/stargazers
 
-[issues-shield]: https://img.shields.io/github/issues/TamrielNetwork/VitalFly?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/TamrielNetwork/VitalSeen?style=for-the-badge
 
-[issues-url]: https://github.com/TamrielNetwork/VitalFly/issues
+[issues-url]: https://github.com/TamrielNetwork/VitalSeen/issues
 
-[license-shield]: https://img.shields.io/github/license/TamrielNetwork/VitalFly?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/TamrielNetwork/VitalSeen?style=for-the-badge
 
-[license-url]: https://github.com/TamrielNetwork/VitalFly/blob/main/LICENSE
+[license-url]: https://github.com/TamrielNetwork/VitalSeen/blob/main/LICENSE
 
-[quality-shield]: https://img.shields.io/codefactor/grade/github/TamrielNetwork/VitalFly?style=for-the-badge
+[quality-shield]: https://img.shields.io/codefactor/grade/github/TamrielNetwork/VitalSeen?style=for-the-badge
 
-[quality-url]: https://www.codefactor.io/repository/github/TamrielNetwork/VitalFly
+[quality-url]: https://www.codefactor.io/repository/github/TamrielNetwork/VitalSeen
