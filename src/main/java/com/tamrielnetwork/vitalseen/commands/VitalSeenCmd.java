@@ -51,10 +51,6 @@ public class VitalSeenCmd implements CommandExecutor {
 			Utils.sendMessage(sender, "invalid-option");
 			return;
 		}
-		if (!(sender instanceof Player)) {
-			Utils.sendMessage(sender, "player-only");
-			return;
-		}
 		// Check perms
 		if (!sender.hasPermission("vitalseen.seen")) {
 			Utils.sendMessage(sender, "no-perms");
