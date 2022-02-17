@@ -65,7 +65,7 @@ public class VitalSeenCmd implements CommandExecutor {
 		}
 		Player player = Bukkit.getPlayer(args[0]);
 		assert player != null;
-		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MMM dd,yyyy HH:mm");
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MMM dd, yyyy HH:mm");
 		Date lastSeenDate = new Date(player.getLastSeen());
 		String lastSeen = simpleDateFormat.format(lastSeenDate);
 		Utils.sendMessage(sender, ImmutableMap.of(
@@ -76,7 +76,7 @@ public class VitalSeenCmd implements CommandExecutor {
 	}
 
 	private boolean isInValidPlayer(@NotNull CommandSender sender, @NotNull String[] args) {
-		if (Bukkit.getPlayer(args[0]) == null || Bukkit.getPlayer(args[0]) == sender) {
+		if (Bukkit.getPlayer(args[0]) == sender) {
 			Utils.sendMessage(sender, "invalid-player");
 			return true;
 		}
