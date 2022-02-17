@@ -36,21 +36,14 @@ public class VitalSeenCmd implements CommandExecutor {
 	@Override
 	public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
 		// Check args length
-		if (args.length == 0) {
+		if (args.length != 1) {
 			Utils.sendMessage(sender, "no-args");
 			return true;
 		}
-		if (args.length == 1) {
-			doSeen(sender, args);
-			return true;
-		}
+		doSeen(sender, args);
 		return true;
 	}
 	private void doSeen(@NotNull CommandSender sender, @NotNull String[] args) {
-		if (args.length > 1) {
-			Utils.sendMessage(sender, "invalid-option");
-			return;
-		}
 		// Check perms
 		if (!sender.hasPermission("vitalseen.seen")) {
 			Utils.sendMessage(sender, "no-perms");

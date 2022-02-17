@@ -83,51 +83,25 @@ To get the plugin running on your server follow these simple steps.
 
 ### Commands and Permissions
 
-1. Permission: `vitalfly.fly`
+1. Permission: `vitalseen.seen`
 
-* Command: `/vitalfly fly`
-* Description: Toggle fly
-
-2. Permission: `vitalfly.fly.others`
-
-* Command: `/vitalfly fly <player>`
-* Description: Toggle fly for other players
-
-3. Permission: `vitalfly.flyspeed`
-
-* Command: `/vitalfly flyspeed <flyspeed>`
-* Description: Set flyspeed
-
-4. Permission: `vitalfly.flyspeed.others`
-
-* Command: `/vitalfly flyspeed <player> <flyspeed>`
-* Description: Set flyspeed for other players
-
-5. Permission: `vitalfly.fly.worldchange`
-
-* Description: Keep fly on worldchange
-
-6. Permission: `vitalfly.fly.gamemodechange`
-
-* Description: Keep fly on gamemodechange
-
-7. Permission: `vitalfly.fly.login`
-
-* Description: Keep fly on login
+* Command: `/vitalseen <player>`
+* Description: See last seen date
 
 ### Configuration - config.yml
 
 ```
-flyspeed:
-  # Values from 1-10
-  # Don't use floating-point numbers
-  limit: 10
 ```
 
 ### Configuration - messages.yml
 
 ```
-
+no-args: "&7Enter this command: &b/vitalseen seen <player>"
+player-only: "&cThis command can only be executed by players!"
+invalid-option: "&cInvalid option!"
+invalid-player: "&cInvalid player!"
+no-perms: "&7You don't have enough permissions!"
+last-seen: "&b%player% &7was last seen on &b%last-seen%"
 ```
 
 <!-- ROADMAP -->
