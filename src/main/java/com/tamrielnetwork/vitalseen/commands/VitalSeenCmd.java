@@ -21,6 +21,7 @@ package com.tamrielnetwork.vitalseen.commands;
 import com.google.common.collect.ImmutableMap;
 import com.tamrielnetwork.vitalseen.utils.Utils;
 import org.bukkit.Bukkit;
+import org.bukkit.OfflinePlayer;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -29,6 +30,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.UUID;
 
 public class VitalSeenCmd implements CommandExecutor {
 
@@ -71,12 +73,13 @@ public class VitalSeenCmd implements CommandExecutor {
 	}
 
 	private boolean isInValidPlayer(@NotNull CommandSender sender, @NotNull String[] args) {
+		OfflinePlayer offlinePlayer = Bukkit.getOfflinePlayer(UUID.fromString(args[0]));
 		Player player = Bukkit.getPlayer(args[0]);
 		if (player == sender) {
 			Utils.sendMessage(sender, "invalid-player");
 			return true;
 		}
-		if (!player.hasPlayedBefore()) {
+		if (!(offlinePlayer.hasPlayedBefore())) {
 			Utils.sendMessage(sender, "invalid-player");
 			return true;
 		}
