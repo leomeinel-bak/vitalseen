@@ -30,7 +30,6 @@ import org.jetbrains.annotations.NotNull;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.UUID;
 
 public class VitalSeenCmd implements CommandExecutor {
 
@@ -73,8 +72,11 @@ public class VitalSeenCmd implements CommandExecutor {
 	}
 
 	private boolean isInValidPlayer(@NotNull CommandSender sender, @NotNull String[] args) {
-		OfflinePlayer offlinePlayer = Bukkit.getOfflinePlayer(UUID.fromString(args[0]));
+		@Deprecated
+		OfflinePlayer offlinePlayer = Bukkit.getOfflinePlayer(args[0]);
+
 		Player player = Bukkit.getPlayer(args[0]);
+
 		if (player == sender) {
 			Utils.sendMessage(sender, "invalid-player");
 			return true;
