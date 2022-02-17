@@ -60,14 +60,35 @@ public class VitalSeenCmd implements CommandExecutor {
 			return;
 		}
 		Player player = Bukkit.getPlayer(args[0]);
-		assert player != null;
+
 		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MMM dd, yyyy HH:mm");
-		Date lastSeenDate = new Date(player.getLastSeen());
-		String lastSeen = simpleDateFormat.format(lastSeenDate);
-		Utils.sendMessage(sender, ImmutableMap.of(
-				"%player%", player.getName(),
-				"%last-seen%", lastSeen),
-				"last-seen");
+		if (player == null) {
+
+			@Deprecated
+			OfflinePlayer offlinePlayer = Bukkit.getOfflinePlayer(args[0]);
+
+			Date lastSeenDate = new Date(offlinePlayer.getLastSeen());
+			String lastSeen = simpleDateFormat.format(lastSeenDate);
+			String playerName = offlinePlayer.getName();
+			if (playerName == null) {
+				Bukkit.getLogger().severe("VitalSeen encountered an error. offlinePlayer.getName() returned null");
+				return;
+			}
+			Utils.sendMessage(sender, ImmutableMap.of(
+							"%player%", playerName,
+							"%last-seen%", lastSeen),
+					"last-seen");
+		} else {
+			Date lastSeenDate = new Date(player.getLastSeen());
+			String lastSeen = simpleDateFormat.format(lastSeenDate);
+			String playerName = player.getName();
+			Utils.sendMessage(sender, ImmutableMap.of(
+							"%player%", playerName,
+							"%last-seen%", lastSeen),
+					"last-seen");
+		}
+
+
 
 	}
 
