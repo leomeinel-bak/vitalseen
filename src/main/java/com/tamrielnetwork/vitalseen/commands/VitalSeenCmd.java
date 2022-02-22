@@ -19,86 +19,42 @@
 package com.tamrielnetwork.vitalseen.commands;
 
 import com.google.common.collect.ImmutableMap;
-import com.tamrielnetwork.vitalseen.utils.Utils;
+import com.tamrielnetwork.vitalseen.utils.Chat;
+import com.tamrielnetwork.vitalseen.utils.commands.Cmd;
+import com.tamrielnetwork.vitalseen.utils.commands.CmdSpec;
 import org.bukkit.Bukkit;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
-import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Objects;
 
 public class VitalSeenCmd implements CommandExecutor {
 
 	@Override
 	public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
-		// Check args length
-		if (args.length != 1) {
-			Utils.sendMessage(sender, "no-args");
+
+		if (Cmd.isArgsLengthNotEqualTo(sender, args, 1)) {
 			return true;
 		}
 		doSeen(sender, args);
 		return true;
 	}
 	private void doSeen(@NotNull CommandSender sender, @NotNull String[] args) {
-		// Check perms
-		if (!sender.hasPermission("vitalseen.seen")) {
-			Utils.sendMessage(sender, "no-perms");
+		@Deprecated OfflinePlayer player = Bukkit.getOfflinePlayer(args[0]);
+		if (CmdSpec.isInvalidCmd(sender, player, "vitalseen.seen")) {
 			return;
 		}
-		if (isInValidPlayer(sender, args)) {
-			return;
-		}
-		Player player = Bukkit.getPlayer(args[0]);
 
 		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MMM dd, yyyy HH:mm");
-		if (player == null) {
 
-			@Deprecated
-			OfflinePlayer offlinePlayer = Bukkit.getOfflinePlayer(args[0]);
-
-			Date lastSeenDate = new Date(offlinePlayer.getLastSeen());
-			String lastSeen = simpleDateFormat.format(lastSeenDate);
-			String playerName = offlinePlayer.getName();
-			if (playerName == null) {
-				Bukkit.getLogger().severe("VitalSeen encountered an error. offlinePlayer.getName() returned null");
-				return;
-			}
-			Utils.sendMessage(sender, ImmutableMap.of(
-							"%player%", playerName,
-							"%last-seen%", lastSeen),
-					"last-seen");
-		} else {
-			Date lastSeenDate = new Date(player.getLastSeen());
-			String lastSeen = simpleDateFormat.format(lastSeenDate);
-			String playerName = player.getName();
-			Utils.sendMessage(sender, ImmutableMap.of(
-							"%player%", playerName,
-							"%last-seen%", lastSeen),
-					"last-seen");
-		}
-
-
+		String lastSeen = simpleDateFormat.format(new Date(player.getLastSeen()));
+		Chat.sendMessage(sender, ImmutableMap.of("%player%", Objects.requireNonNull(player.getName()), "%last-seen%", lastSeen), "last-seen");
 
 	}
 
-	private boolean isInValidPlayer(@NotNull CommandSender sender, @NotNull String[] args) {
-		@Deprecated
-		OfflinePlayer offlinePlayer = Bukkit.getOfflinePlayer(args[0]);
-
-		Player player = Bukkit.getPlayer(args[0]);
-
-		if (player == sender) {
-			Utils.sendMessage(sender, "invalid-player");
-			return true;
-		}
-		if (!(offlinePlayer.hasPlayedBefore())) {
-			Utils.sendMessage(sender, "invalid-player");
-			return true;
-		}
-		return false;
-	}
 }
