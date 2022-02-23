@@ -23,7 +23,9 @@ import org.bukkit.command.CommandSender;
 import org.jetbrains.annotations.NotNull;
 
 public class CmdSpec {
+
 	public static boolean isInvalidCmd(@NotNull CommandSender sender, OfflinePlayer player, @NotNull String perm) {
+
 		if (Cmd.isNotPermitted(sender, perm)) {
 			return true;
 		}

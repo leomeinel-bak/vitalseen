@@ -46,6 +46,7 @@ public class VitalSeenCmd implements CommandExecutor {
 	}
 
 	private void doSeen(@NotNull CommandSender sender, @NotNull String[] args) {
+
 		@Deprecated OfflinePlayer player = Bukkit.getOfflinePlayer(args[0]);
 		if (CmdSpec.isInvalidCmd(sender, player, "vitalseen.seen")) {
 			return;

@@ -52,6 +52,7 @@ public final class VitalSeen extends JavaPlugin {
 	}
 
 	public Messages getMessages() {
+
 		return messages;
 	}
 
