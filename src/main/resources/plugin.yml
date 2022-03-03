@@ -6,9 +6,9 @@ authors: [ Tamriel Network ]
 website: https://tamriel.site
 description: Gives players the ability to see when other players were last seen.
 commands:
-  vitalseen:
+  seen:
     description: "Main command"
-    usage: "/vitalseen <player>"
+    usage: "/seen <player>"
 permissions:
   vitalseen.seen:
     description: "Permission to see last seen date"

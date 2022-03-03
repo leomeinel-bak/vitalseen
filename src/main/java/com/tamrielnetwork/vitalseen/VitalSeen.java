@@ -32,9 +32,7 @@ public final class VitalSeen extends JavaPlugin {
 	@Override
 	public void onEnable() {
 
-		Objects.requireNonNull(getCommand("vitalseen")).setExecutor(new VitalSeenCmd());
-
-		saveDefaultConfig();
+		Objects.requireNonNull(getCommand("seen")).setExecutor(new VitalSeenCmd());
 
 		messages = new Messages();
 

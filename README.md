@@ -85,7 +85,7 @@ To get the plugin running on your server follow these simple steps.
 
 1. Permission: `vitalseen.seen`
 
-* Command: `/vitalseen <player>`
+* Command: `/seen <player>`
 * Description: See last seen date
 
 ### Configuration - config.yml
