@@ -18,7 +18,6 @@
 
 package com.tamrielnetwork.vitalseen.commands;
 
-import com.google.common.collect.ImmutableMap;
 import com.tamrielnetwork.vitalseen.utils.Chat;
 import com.tamrielnetwork.vitalseen.utils.commands.Cmd;
 import com.tamrielnetwork.vitalseen.utils.commands.CmdSpec;
@@ -39,7 +38,7 @@ public class VitalSeenCmd implements CommandExecutor {
 	public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
 
 		if (Cmd.isArgsLengthNotEqualTo(sender, args, 1)) {
-			return true;
+			return false;
 		}
 		doSeen(sender, args);
 		return true;
@@ -55,7 +54,7 @@ public class VitalSeenCmd implements CommandExecutor {
 		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MMM dd, yyyy HH:mm");
 
 		String lastSeen = simpleDateFormat.format(new Date(player.getLastSeen()));
-		Chat.sendMessage(sender, ImmutableMap.of("%player%", Objects.requireNonNull(player.getName()), "%last-seen%", lastSeen), "last-seen");
+		Chat.sendMessage(sender, java.util.Map.of("%player%", Objects.requireNonNull(player.getName()), "%last-seen%", lastSeen), "last-seen");
 
 	}
 
