@@ -11,5 +11,5 @@ commands:
     usage: "/seen <player>"
 permissions:
   vitalseen.seen:
-    description: "Permission to see last seen date"
+    description: "Permission to see last date a player was online"
     default: op

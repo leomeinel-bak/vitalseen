@@ -45,7 +45,7 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#commands-and-permissions">Commands and Permissions</a></li>
-        <li><a href="#configuration">Configuration</a></li>
+        <li><a href="#configuration - messages.yml">Configuration</a></li>
       </ul>
     </li>
     <li><a href="#roadmap">Roadmap</a></li>
@@ -86,7 +86,7 @@ To get the plugin running on your server follow these simple steps.
 1. Permission: `vitalseen.seen`
 
 * Command: `/seen <player>`
-* Description: See last seen date
+* Description: See last time a player was online
 
 ### Configuration - messages.yml
 
