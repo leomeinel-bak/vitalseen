@@ -88,20 +88,14 @@ To get the plugin running on your server follow these simple steps.
 * Command: `/seen <player>`
 * Description: See last seen date
 
-### Configuration - config.yml
-
-```
-```
-
 ### Configuration - messages.yml
 
 ```
-no-args: "&7Enter this command: &b/vitalseen seen <player>"
-player-only: "&cThis command can only be executed by players!"
-invalid-option: "&cInvalid option!"
-invalid-player: "&cInvalid player!"
-no-perms: "&7You don't have enough permissions!"
-last-seen: "&b%player% &7was last seen on &b%last-seen%"
+cmd: "&fUsage: &b/seen <player>"
+last-seen: "&b%player% &fwas last seen on &b%last-seen%"
+no-perms: "&cYou don't have enough permissions!"
+invalid-player: "&cPlayer is not registered!"
+same-player: "&cYou can't use that on yourself!"
 ```
 
 <!-- ROADMAP -->
