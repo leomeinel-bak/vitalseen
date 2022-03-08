@@ -30,6 +30,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Map;
 import java.util.Objects;
 
 public class VitalSeenCmd implements CommandExecutor {
@@ -54,7 +55,7 @@ public class VitalSeenCmd implements CommandExecutor {
 		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MMM dd, yyyy HH:mm");
 
 		String lastSeen = simpleDateFormat.format(new Date(player.getLastSeen()));
-		Chat.sendMessage(sender, java.util.Map.of("%player%", Objects.requireNonNull(player.getName()), "%last-seen%", lastSeen), "last-seen");
+		Chat.sendMessage(sender, Map.of("%player%", Objects.requireNonNull(player.getName()), "%last-seen%", lastSeen), "last-seen");
 
 	}
 
