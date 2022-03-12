@@ -33,11 +33,12 @@ import java.util.Date;
 import java.util.Map;
 import java.util.Objects;
 
-public class VitalSeenCmd implements CommandExecutor {
+public class VitalSeenCmd
+		implements CommandExecutor {
 
 	@Override
-	public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
-
+	public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label,
+	                         @NotNull String[] args) {
 		if (Cmd.isArgsLengthNotEqualTo(sender, args, 1)) {
 			return false;
 		}
@@ -46,17 +47,12 @@ public class VitalSeenCmd implements CommandExecutor {
 	}
 
 	private void doSeen(@NotNull CommandSender sender, @NotNull String[] args) {
-
 		@Deprecated OfflinePlayer player = Bukkit.getOfflinePlayer(args[0]);
 		if (CmdSpec.isInvalidCmd(sender, player, "vitalseen.seen")) {
 			return;
 		}
-
 		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MMM dd, yyyy HH:mm");
-
 		String lastSeen = simpleDateFormat.format(new Date(player.getLastSeen()));
 		Chat.sendMessage(sender, Map.of("%player%", Objects.requireNonNull(player.getName()), "%last-seen%", lastSeen), "last-seen");
-
 	}
-
 }
