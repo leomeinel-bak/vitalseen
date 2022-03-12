@@ -53,6 +53,7 @@ public class VitalSeenCmd
 		}
 		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MMM dd, yyyy HH:mm");
 		String lastSeen = simpleDateFormat.format(new Date(player.getLastSeen()));
-		Chat.sendMessage(sender, Map.of("%player%", Objects.requireNonNull(player.getName()), "%last-seen%", lastSeen), "last-seen");
+		Chat.sendMessage(sender, Map.of("%player%", Objects.requireNonNull(player.getName()), "%last-seen%", lastSeen),
+		                 "last-seen");
 	}
 }
