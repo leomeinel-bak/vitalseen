@@ -1,6 +1,6 @@
 name: VitalSeen
 version: @version@
-main: com.tamrielnetwork.vitalseen.VitalSeen
+main: dev.meinel.leo.vitalseen.VitalSeen
 api-version: 1.17
 authors: [ Leopold Meinel ]
 description: Gives players the ability to see when other players were last seen.

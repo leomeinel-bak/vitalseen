@@ -16,10 +16,10 @@
  * along with this program. If not, see https://github.com/LeoMeinel/VitalSeen/blob/main/LICENSE
  */
 
-package com.tamrielnetwork.vitalseen;
+package dev.meinel.leo.vitalseen;
 
-import com.tamrielnetwork.vitalseen.commands.VitalSeenCmd;
-import com.tamrielnetwork.vitalseen.files.Messages;
+import dev.meinel.leo.vitalseen.commands.VitalSeenCmd;
+import dev.meinel.leo.vitalseen.files.Messages;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 

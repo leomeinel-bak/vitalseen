@@ -16,19 +16,44 @@
  * along with this program. If not, see https://github.com/LeoMeinel/VitalSeen/blob/main/LICENSE
  */
 
-package com.tamrielnetwork.vitalseen.utils.commands;
+package dev.meinel.leo.vitalseen.utils.commands;
 
+import dev.meinel.leo.vitalseen.utils.Chat;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.command.CommandSender;
 import org.jetbrains.annotations.NotNull;
 
-public class CmdSpec {
+public class Cmd {
 
-	private CmdSpec() {
+	private Cmd() {
 		throw new IllegalStateException("Utility class");
 	}
 
-	public static boolean isInvalidCmd(@NotNull CommandSender sender, OfflinePlayer player, @NotNull String perm) {
-		return Cmd.isNotPermitted(sender, perm) || Cmd.isInvalidPlayer(sender, player);
+	public static boolean isArgsLengthNotEqualTo(@NotNull CommandSender sender, @NotNull String[] args, int length) {
+		if (args.length != length) {
+			Chat.sendMessage(sender, "cmd");
+			return true;
+		}
+		return false;
+	}
+
+	public static boolean isNotPermitted(@NotNull CommandSender sender, @NotNull String perm) {
+		if (!sender.hasPermission(perm)) {
+			Chat.sendMessage(sender, "no-perms");
+			return true;
+		}
+		return false;
+	}
+
+	public static boolean isInvalidPlayer(@NotNull CommandSender sender, OfflinePlayer player) {
+		if (player == null || !player.hasPlayedBefore()) {
+			Chat.sendMessage(sender, "invalid-player");
+			return true;
+		}
+		if (player == sender) {
+			Chat.sendMessage(sender, "same-player");
+			return true;
+		}
+		return false;
 	}
 }

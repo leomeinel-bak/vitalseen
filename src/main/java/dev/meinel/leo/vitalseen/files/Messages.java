@@ -16,9 +16,9 @@
  * along with this program. If not, see https://github.com/LeoMeinel/VitalSeen/blob/main/LICENSE
  */
 
-package com.tamrielnetwork.vitalseen.files;
+package dev.meinel.leo.vitalseen.files;
 
-import com.tamrielnetwork.vitalseen.VitalSeen;
+import dev.meinel.leo.vitalseen.VitalSeen;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;

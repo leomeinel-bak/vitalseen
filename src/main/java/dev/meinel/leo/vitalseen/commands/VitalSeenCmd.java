@@ -16,11 +16,11 @@
  * along with this program. If not, see https://github.com/LeoMeinel/VitalSeen/blob/main/LICENSE
  */
 
-package com.tamrielnetwork.vitalseen.commands;
+package dev.meinel.leo.vitalseen.commands;
 
-import com.tamrielnetwork.vitalseen.utils.Chat;
-import com.tamrielnetwork.vitalseen.utils.commands.Cmd;
-import com.tamrielnetwork.vitalseen.utils.commands.CmdSpec;
+import dev.meinel.leo.vitalseen.utils.Chat;
+import dev.meinel.leo.vitalseen.utils.commands.Cmd;
+import dev.meinel.leo.vitalseen.utils.commands.CmdSpec;
 import org.bukkit.Bukkit;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.command.Command;
