@@ -16,14 +16,14 @@ import org.jetbrains.annotations.NotNull;
 
 public class CmdSpec {
 
-  private CmdSpec() {
-    throw new IllegalStateException("Utility class");
-  }
+    private CmdSpec() {
+        throw new IllegalStateException("Utility class");
+    }
 
-  public static boolean isInvalidCmd(
-      @NotNull CommandSender sender,
-      OfflinePlayer player,
-      @NotNull String perm) {
-    return (Cmd.isNotPermitted(sender, perm) || Cmd.isInvalidPlayer(sender, player));
-  }
+    public static boolean isInvalidCmd(
+            @NotNull CommandSender sender,
+            OfflinePlayer player,
+            @NotNull String perm) {
+        return (Cmd.isNotPermitted(sender, perm) || Cmd.isInvalidPlayer(sender, player));
+    }
 }

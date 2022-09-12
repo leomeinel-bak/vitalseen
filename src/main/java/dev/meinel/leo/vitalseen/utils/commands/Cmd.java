@@ -17,42 +17,42 @@ import org.jetbrains.annotations.NotNull;
 
 public class Cmd {
 
-  private Cmd() {
-    throw new IllegalStateException("Utility class");
-  }
+    private Cmd() {
+        throw new IllegalStateException("Utility class");
+    }
 
-  public static boolean isArgsLengthNotEqualTo(
-      @NotNull CommandSender sender,
-      @NotNull String[] args,
-      int length) {
-    if (args.length != length) {
-      Chat.sendMessage(sender, "cmd");
-      return true;
+    public static boolean isArgsLengthNotEqualTo(
+            @NotNull CommandSender sender,
+            @NotNull String[] args,
+            int length) {
+        if (args.length != length) {
+            Chat.sendMessage(sender, "cmd");
+            return true;
+        }
+        return false;
     }
-    return false;
-  }
 
-  public static boolean isNotPermitted(
-      @NotNull CommandSender sender,
-      @NotNull String perm) {
-    if (!sender.hasPermission(perm)) {
-      Chat.sendMessage(sender, "no-perms");
-      return true;
+    public static boolean isNotPermitted(
+            @NotNull CommandSender sender,
+            @NotNull String perm) {
+        if (!sender.hasPermission(perm)) {
+            Chat.sendMessage(sender, "no-perms");
+            return true;
+        }
+        return false;
     }
-    return false;
-  }
 
-  public static boolean isInvalidPlayer(
-      @NotNull CommandSender sender,
-      OfflinePlayer player) {
-    if (player == null || !player.hasPlayedBefore()) {
-      Chat.sendMessage(sender, "invalid-player");
-      return true;
+    public static boolean isInvalidPlayer(
+            @NotNull CommandSender sender,
+            OfflinePlayer player) {
+        if (player == null || !player.hasPlayedBefore()) {
+            Chat.sendMessage(sender, "invalid-player");
+            return true;
+        }
+        if (player == sender) {
+            Chat.sendMessage(sender, "same-player");
+            return true;
+        }
+        return false;
     }
-    if (player == sender) {
-      Chat.sendMessage(sender, "same-player");
-      return true;
-    }
-    return false;
-  }
 }
