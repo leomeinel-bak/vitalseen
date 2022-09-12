@@ -1,4 +1,5 @@
 <!-- PROJECT SHIELDS -->
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -68,12 +69,12 @@ This plugin is perfect for any server wanting their players to keep in touch wit
 
 ### Features
 
-* See when player was last seen formatted as date
+- See when player was last seen formatted as date
 
 ### Built With
 
-* [Gradle 7](https://docs.gradle.org/7.4/release-notes.html)
-* [OpenJDK 17](https://openjdk.java.net/projects/jdk/17/)
+- [Gradle 7](https://docs.gradle.org/7.4/release-notes.html)
+- [OpenJDK 17](https://openjdk.java.net/projects/jdk/17/)
 
 <!-- GETTING STARTED -->
 
@@ -85,8 +86,8 @@ To get the plugin running on your server follow these simple steps.
 
 1. Permission: `vitalseen.seen`
 
-* Command: `/seen <player>`
-* Description: See last time a player was online
+- Command: `/seen <player>`
+- Description: See last time a player was online
 
 ### Configuration - messages.yml
 
@@ -136,30 +137,19 @@ Project Link - [VitalSeen](https://github.com/LeoMeinel/VitalSeen) - GitHub
 
 ### Acknowledgements
 
-* [README.md - othneildrew](https://github.com/othneildrew/Best-README-Template)
+- [README.md - othneildrew](https://github.com/othneildrew/Best-README-Template)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
 [contributors-shield]: https://img.shields.io/github/contributors-anon/LeoMeinel/VitalSeen?style=for-the-badge
-
 [contributors-url]: https://github.com/LeoMeinel/VitalSeen/graphs/contributors
-
 [forks-shield]: https://img.shields.io/github/forks/LeoMeinel/VitalSeen?label=Forks&style=for-the-badge
-
 [forks-url]: https://github.com/LeoMeinel/VitalSeen/network/members
-
 [stars-shield]: https://img.shields.io/github/stars/LeoMeinel/VitalSeen?style=for-the-badge
-
 [stars-url]: https://github.com/LeoMeinel/VitalSeen/stargazers
-
 [issues-shield]: https://img.shields.io/github/issues/LeoMeinel/VitalSeen?style=for-the-badge
-
 [issues-url]: https://github.com/LeoMeinel/VitalSeen/issues
-
 [license-shield]: https://img.shields.io/github/license/LeoMeinel/VitalSeen?style=for-the-badge
-
 [license-url]: https://github.com/LeoMeinel/VitalSeen/blob/main/LICENSE
-
 [quality-shield]: https://img.shields.io/codefactor/grade/github/LeoMeinel/VitalSeen?style=for-the-badge
-
 [quality-url]: https://www.codefactor.io/repository/github/LeoMeinel/VitalSeen
