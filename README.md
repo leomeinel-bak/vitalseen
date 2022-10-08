@@ -11,7 +11,7 @@
 <!--suppress ALL -->
 <br />
 <p align="center">
-  <a href="https://github.com/LeoMeinel/VitalSeen">
+  <a href="https://github.com/LeoMeinel/vitalseen">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -20,14 +20,14 @@
   <p align="center">
     See when player was last seen on Spigot and Paper
     <br />
-    <a href="https://github.com/LeoMeinel/VitalSeen"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/LeoMeinel/vitalseen"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/LeoMeinel/VitalSeen">View Demo</a>
+    <a href="https://github.com/LeoMeinel/vitalseen">View Demo</a>
     ·
-    <a href="https://github.com/LeoMeinel/VitalSeen/issues">Report Bug</a>
+    <a href="https://github.com/LeoMeinel/vitalseen/issues">Report Bug</a>
     ·
-    <a href="https://github.com/LeoMeinel/VitalSeen/issues">Request Feature</a>
+    <a href="https://github.com/LeoMeinel/vitalseen/issues">Request Feature</a>
   </p>
 
 <!-- ABOUT THE PROJECT -->
@@ -76,7 +76,7 @@ same-player: "&cYou can't use that on yourself!"
 
 ## Roadmap
 
-See the [open issues](https://github.com/LeoMeinel/VitalSeen/issues) for a list of proposed features (and known
+See the [open issues](https://github.com/LeoMeinel/vitalseen/issues) for a list of proposed features (and known
 issues).
 
 <!-- CONTRIBUTING -->
@@ -104,7 +104,7 @@ Distributed under the GNU General Public License v3.0. See `LICENSE` for more in
 
 Leopold Meinel - [leo@meinel.dev](mailto:leo@meinel.dev) - eMail
 
-Project Link - [VitalSeen](https://github.com/LeoMeinel/VitalSeen) - GitHub
+Project Link - [VitalSeen](https://github.com/LeoMeinel/vitalseen) - GitHub
 
 <!-- ACKNOWLEDGEMENTS -->
 
@@ -114,15 +114,15 @@ Project Link - [VitalSeen](https://github.com/LeoMeinel/VitalSeen) - GitHub
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
-[contributors-shield]: https://img.shields.io/github/contributors-anon/LeoMeinel/VitalSeen?style=for-the-badge
-[contributors-url]: https://github.com/LeoMeinel/VitalSeen/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/LeoMeinel/VitalSeen?label=Forks&style=for-the-badge
-[forks-url]: https://github.com/LeoMeinel/VitalSeen/network/members
-[stars-shield]: https://img.shields.io/github/stars/LeoMeinel/VitalSeen?style=for-the-badge
-[stars-url]: https://github.com/LeoMeinel/VitalSeen/stargazers
-[issues-shield]: https://img.shields.io/github/issues/LeoMeinel/VitalSeen?style=for-the-badge
-[issues-url]: https://github.com/LeoMeinel/VitalSeen/issues
-[license-shield]: https://img.shields.io/github/license/LeoMeinel/VitalSeen?style=for-the-badge
-[license-url]: https://github.com/LeoMeinel/VitalSeen/blob/main/LICENSE
-[quality-shield]: https://img.shields.io/codefactor/grade/github/LeoMeinel/VitalSeen?style=for-the-badge
-[quality-url]: https://www.codefactor.io/repository/github/LeoMeinel/VitalSeen
+[contributors-shield]: https://img.shields.io/github/contributors-anon/LeoMeinel/vitalseen?style=for-the-badge
+[contributors-url]: https://github.com/LeoMeinel/vitalseen/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/LeoMeinel/vitalseen?label=Forks&style=for-the-badge
+[forks-url]: https://github.com/LeoMeinel/vitalseen/network/members
+[stars-shield]: https://img.shields.io/github/stars/LeoMeinel/vitalseen?style=for-the-badge
+[stars-url]: https://github.com/LeoMeinel/vitalseen/stargazers
+[issues-shield]: https://img.shields.io/github/issues/LeoMeinel/vitalseen?style=for-the-badge
+[issues-url]: https://github.com/LeoMeinel/vitalseen/issues
+[license-shield]: https://img.shields.io/github/license/LeoMeinel/vitalseen?style=for-the-badge
+[license-url]: https://github.com/LeoMeinel/vitalseen/blob/main/LICENSE
+[quality-shield]: https://img.shields.io/codefactor/grade/github/LeoMeinel/vitalseen?style=for-the-badge
+[quality-url]: https://www.codefactor.io/repository/github/LeoMeinel/vitalseen
