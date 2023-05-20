@@ -2,7 +2,7 @@
  * File: CmdSpec.java
  * Author: Leopold Meinel (leo@meinel.dev)
  * -----
- * Copyright (c) 2022 Leopold Meinel & contributors
+ * Copyright (c) 2023 Leopold Meinel & contributors
  * SPDX ID: GPL-3.0-or-later
  * URL: https://www.gnu.org/licenses/gpl-3.0-standalone.html
  * -----
@@ -20,9 +20,7 @@ public class CmdSpec {
         throw new IllegalStateException("Utility class");
     }
 
-    public static boolean isInvalidCmd(
-            @NotNull CommandSender sender,
-            OfflinePlayer player,
+    public static boolean isInvalidCmd(@NotNull CommandSender sender, OfflinePlayer player,
             @NotNull String perm) {
         return (Cmd.isNotPermitted(sender, perm) || Cmd.isInvalidPlayer(sender, player));
     }
