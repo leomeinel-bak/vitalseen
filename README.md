@@ -65,7 +65,6 @@ To get the plugin running on your server follow these simple steps.
 ### Configuration - messages.yml
 
 ```yaml
-cmd: "&fUsage: &b/seen <player>"
 last-seen: "&b%player% &fwas last seen on &b%last-seen%"
 no-perms: "&cYou don't have enough permissions!"
 invalid-player: "&cPlayer is not registered!"
